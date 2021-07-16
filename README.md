@@ -15,3 +15,4 @@ O desafio consiste em construir uma landing page com um formulário para cadastr
  * Campo de e-mail com validação
 
  # Endereço para acesso
+ <https://landingloja.netlify.app/>
