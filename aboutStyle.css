@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.nomepag {
+    position: relative;
+    display: flex;
+    color: #CD00CD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.menu a:hover{
+    background-color: #CD00CD;
+    color: #000;
+    transition: 0.4s;
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: #CD00CD;
+    color:#fff;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+#sobre {
+    font-family: 'Roboto', sans-serif;
+    padding: 2% 15% 1% 15%;
+    margin: 5% 5%;
+    background-color: transparent;
+    border: #ff495c solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perfil-sobre {
+    padding: 10% 5%;
+    margin: 2% 2%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#perfil-descricao p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFF;
+    text-align: justify;
+}
+  
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #CD00CD;
+    font-size: 30px;
+}
+
+#section-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato {
+    padding-top: 40px;
+}
+
+#profissional {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background: #f7ad19;
+    border: #f7ad19 solid 1px;
+    width: 50%;
+    margin: 5px auto;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#profissional:hover{
+    border: #f7ad19 solid 1px;
+    color: #fff;
+    transition-duration: 0.3s;
+    background: transparent;
+}
+
+#repositorio {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background: #f7ad19;
+    border: #f7ad19 solid 1px;
+    width: 50%;
+    margin: 5px auto;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#repositorio:hover{
+    border: #f7ad19 solid 1px;
+    color: #fff;
+    transition-duration: 0.3s;
+    background: transparent;
+}
+
+@media(max-width: 800px) {
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked ~ .menu{
+        margin-right: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-right: -150%;
+        transition: all 0.4s;
+    }
+    
+    .menu ul li {
+        width: 100%;
+        float: none; 
+    }
+}
+
+
+@media screen and (min-width: 1201px) {
+    article.perfil-sobre {
+    height: 100%;
+}
+    #perfil-descricao {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+    article.perfil {
+      width: 100%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+}
+    
+#sobre {
+    padding: 2% 5%;
+    margin: 2% 2%;
+    display: block;
+}
+}
+  
+.creditos { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+
+.creditos a { 
+    color: #CD00CD;
+    text-decoration: none;
+}

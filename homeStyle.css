@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.nomepag {
+    position: relative;
+    display: flex;
+    color: #CD00CD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.menu a:hover{
+    background-color: #CD00CD;
+    color: #000;
+    transition: 0.4s;
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: #CD00CD;
+    color:#fff;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .texto {
+    position: relative;
+    max-width: 590px;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.texto h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #ff495c;
+}
+
+.texto h2 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #CD00CD;
+}
+
+.texto h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+    color: #ff495c;
+}
+
+.texto p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.paragrafo {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+#formulario {
+    float: right;
+    position: relative;
+    text-align: center;
+    border: #ff495c solid 1px;
+    padding: 20px;
+}
+
+#formulario input {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: #ff495c solid 1px;
+    padding: 15px 10px;
+}
+
+#formulario #botao {
+    font-family: 'Roboto', sans-serif;
+    background: #f7ad19;
+    border: #f7ad19 solid 1px;
+    width: 70%;
+    margin: 5px auto;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#formulario #botao:hover{
+    border: #f7ad19 solid 1px;
+    color: #fff;
+    transition-duration: 0.3s;
+    background: transparent;
+}
+
+#flutuante {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: fixed;
+    top: 86%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ff495c;
+}
+
+#flutuante:hover{
+    background: #fff;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+.creditos { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+
+.creditos a { 
+    color: #CD00CD;
+    text-decoration: none;
+}
+
+@media(max-width: 800px) {
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked ~ .menu{
+        margin-right: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-right: -150%;
+        transition: all 0.4s;
+    }
+    
+    .menu ul li {
+        width: 100%;
+        float: none; 
+    }
+}
+
+@media (max-width: 800px) {
+    section#inicio {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+  }
+    .conteudo {
+        padding: 2% 5%;
+        margin: 2% 2%;
+        width: 100%;
+        display: block;
+    }
+    #formulario {
+        padding: 2% 5%;
+        margin: 2% 2%;
+        display: block;
+    }
+}
